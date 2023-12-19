@@ -43,7 +43,9 @@
           <li><a class="header__menu__item" href="#about">About</a></li>
           <li><a class="header__menu__item" href="#skills">Skills</a></li>
           <li><a class="header__menu__item" href="#work">My work</a></li>
-          <li><a class="header__menu__item" href="#testimonial">Testimonials</a></li>
+          <li>
+            <a class="header__menu__item" href="#testimonial">Testimonials</a>
+          </li>
           <li><a class="header__menu__item" href="#contact">contact</a></li>
         </ul>
       </nav>
@@ -51,17 +53,24 @@
     <!-- Main -->
     <main>
       <!-- Home -->
-      <sesection id="home">
-        <img src="./images/profile.png" alt="Ari's profile" />
-        <h2>Hello I&#39;m Dream Coder, Ari</h2>
-        <p>
+      <section id="home">
+        <img
+          class="home__avatar"
+          src="./images/profile.png"
+          alt="Ari's profile"
+        />
+        <h2 class="home__title">
+          Hello<br />
+          I&#39;m <strong class="home__title--strong">Dream Coder</strong>, Ari
+        </h2>
+        <p class="home__decription">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.
         </p>
-        <a href="#contact">Contact Me</a>
-      </sesection>
+        <a class="home__contact" href="#contact">Contact Me</a>
+      </section>
       <!-- About -->
-      <sesection id="about">
+      <section id="about">
         <h2>About me</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -102,9 +111,9 @@
             </div>
           </li>
         </ul>
-      </sesection>
+      </section>
       <!-- Skills -->
-      <sesection id="skills">
+      <section id="skills">
         <h2>My Skills</h2>
         <p>Skills & Attributes</p>
         <p>
@@ -162,9 +171,9 @@
             </ul>
           </section>
         </div>
-      </sesection>
+      </section>
       <!-- Work -->
-      <sesection id="work">
+      <section id="work">
         <h2>My work</h2>
         <p>Projects</p>
         <ul>
@@ -256,9 +265,9 @@
             </a>
           </li>
         </ul>
-      </sesection>
+      </section>
       <!-- Testimonials -->
-      <sesection id="testimonials">
+      <section id="testimonials">
         <h2>Testimonials</h2>
         <p>See what they say about me</p>
         <ul>
@@ -299,7 +308,7 @@
             </div>
           </li>
         </ul>
-      </sesection>
+      </section>
       <!-- Arrow up -->
       <aside>
         <a href="#home" title="back to top">
@@ -313,7 +322,11 @@
       <p>ari6695@naver.com</p>
       <ul>
         <li>
-          <a href="https://github.com/A-ri-SIM" target="_blank" title="my github link">
+          <a
+            href="https://github.com/A-ri-SIM"
+            target="_blank"
+            title="my github link"
+          >
             <i class="fa-brands fa-github"></i>
           </a>
         </li>
