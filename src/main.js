@@ -19,9 +19,21 @@ document.addEventListener('scroll', () => {
 // arrow up 버튼 나타내기
 const arrowUp = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () => {
-    if(window.scrollY>homeHeight/2){
-        arrowUp.style.opacity=1;
-    }else{
-        arrowUp.style.opacity=0;
-    }
+  if (window.scrollY > homeHeight / 2) {
+    arrowUp.style.opacity = 1;
+  } else {
+    arrowUp.style.opacity = 0;
+  }
 });
+
+// Navbar toggle click styiling
+const navBarMenu = document.querySelector('.header__menu');
+const navBarToggle = document.querySelector('.header_toggle');
+navBarToggle.addEventListener('click', () => {
+  navBarMenu.classList.toggle('open');
+});
+
+// Navbar 메뉴 클릭시 메뉴를 자동으로 닫아줌
+navBarMenu.addEventListener('click', () => {
+    navBarMenu.classList.remove('open');
+  });
