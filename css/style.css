@@ -179,7 +179,7 @@ button:focus {
 }
 .home__avatar {
   background: var(--home-avatar-svg);
-  background-repeat: no-repeat;/
+  background-repeat: no-repeat;
   position: relative;
   width: 400px;
   height: 400px;
