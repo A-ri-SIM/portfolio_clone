@@ -11,8 +11,14 @@
     <!-- OG (Open Graph Data) -->
     <meta property="og:title" content="아리의 포트폴리오" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://a-ri-sim.github.io/portfolio_clone/" />
-    <meta property="og:image" content="https://a-ri-sim.github.io/portfolio_clone/imges/og.webp" />
+    <meta
+      property="og:url"
+      content="https://a-ri-sim.github.io/portfolio_clone/"
+    />
+    <meta
+      property="og:image"
+      content="https://a-ri-sim.github.io/portfolio_clone/imges/og.webp"
+    />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,12 +31,15 @@
       src="https://kit.fontawesome.com/b9a00d1905.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Javascript -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -59,22 +68,24 @@
     <main>
       <!-- Home -->
       <section id="home">
-        <div class="home_container">
+        <div class="home_container max-container">
           <img
             class="home__avatar"
             src="./images/profile.png"
             alt="Ari's profile"
           />
-          <h2 class="home__title">
-            Hello<br />
-            I&#39;m <strong class="home__title--strong">Dream Coder</strong>,
-            Ari
-          </h2>
-          <p class="home__decription">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <a class="home__contact" href="#contact">Contact Me</a>
+          <div>
+            <h2 class="home__title" aria-label="Hello, I'm Dream Coder Ari">
+              Hello<br />
+              I&#39;m <strong class="home__title--strong"> Dream Coder </strong> ,
+              Ari
+            </h2>
+            <p class="home__decription">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <a class="home__contact" href="#contact">Contact Me</a>
+          </div>
         </div>
       </section>
       <!-- About -->
